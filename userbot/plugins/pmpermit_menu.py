@@ -14,21 +14,21 @@ from . import ALIVE_NAME, PM_START, PMMESSAGE_CACHE, set_key
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "cat"
 PREV_REPLY_MESSAGE = {}
-PM = f"""Hello. You are accessing the availabe menu of my master, {DEFAULTUSER}.
-__Let's make this smooth and let me know why you are here.__
-**Choose one of the following reasons why you are here:**
+PM = f"""Olá. Você está acessando o menu disponível do meu mestre, {DEFAULTUSER}.
+__Vamos deixar isso tranquilo e me dizer por que você está aqui.__
+**Escolha um dos seguintes motivos pelos quais você está aqui:**
 
-`a`. To chat with my master
-`b`. To spam my master's inbox.
-`c`. To enquire something
-`d`. To request something\n"""
-ONE = """__Okay. Your request has been registered. Do not spam my master's inbox.You can expect a reply within next few years. He/She is a busy man, unlike you probably.__
+`a`. Para conversar com meu mestre
+`b`. Para spam na caixa de entrada do meu mestre.
+`c`. Para perguntar algo
+`d`. Para pedir algo\n"""
+ONE = """__OK. Sua solicitação foi registrada. Não envie spam para a caixa de entrada do meu mestre. Você pode esperar uma resposta nos próximos anos. Ele / Ela é um homem ocupado, ao contrário de você provavelmente.__
 
-**⚠️ You will be blocked and reported if you spam. ⚠️**\n\n"""
-TWO = " `███████▄▄███████████▄  \n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓███░░░░░░░░░░░░█\n██████▀▀▀█░░░░██████▀  \n░░░░░░░░░█░░░░█  \n░░░░░░░░░░█░░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░░▀▀ `\n\n**So uncool, this is not your home. Go bother someone else. You have been blocked and reported until further notice.**"
-THREE = "__Okay. My master has not seen your message yet.He/She usually responds to people,though idk about retarted ones.__\n __He'll respond when he/she comes back, if he/she wants to.There's already a lot of pending messages😶__\n **Please do not spam unless you wish to be blocked and reported.**"
-FOUR = "`Okay. please have the basic manners as to not bother my master too much. If he/she wishes to help you, he/she will respond to you soon.`\n**Do not ask repeatdly else you will be blocked and reported.**"
-LWARN = "**This is your last warning. DO NOT send another message else you will be blocked and reported. Keep patience. My master will respond you ASAP.**\n"
+**⚠️ Você será bloqueado e denunciado se enviar spam. ⚠️**\n\n"""
+TWO = " `███████▄▄███████████▄  \n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓███░░░░░░░░░░░░█\n██████▀▀▀█░░░░██████▀  \n░░░░░░░░░█░░░░█  \n░░░░░░░░░░█░░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░░▀▀ `\n\n**Tão chato, esta não é sua casa. Vá incomodar outra pessoa. Você foi bloqueado e denunciado até novo aviso.**"
+THREE = "__OK. Meu mestre ainda não viu sua mensagem.Ele / Ela geralmente responde às pessoas, embora se preocupe com as que já partiram.__\n __Ele responderá quando voltar, se quiser. Já há muitas mensagens pendentes😶__\n **Não envie spam, a menos que deseje ser bloqueado e denunciado.**"
+FOUR = "`OK. por favor, tenha as maneiras básicas de não incomodar muito meu mestre. Se ele / ela deseja ajudá-lo, ele / ela responderá a você em breve.`\n**Não pergunte repetidamente, senão você será bloqueado e denunciado.**"
+LWARN = "**Este é o seu último aviso. NÃO envie outra mensagem, senão você será bloqueado e denunciado. Mantenha a paciência. Meu mestre irá responder o mais rápido possível.**\n"
 
 
 @bot.on(events.NewMessage(pattern=r"\/start", incoming=True))

@@ -16,15 +16,15 @@ async def _(event):
     if event.fwd_from:
         return
     options = [
-        "typing",
-        "contact",
-        "game",
-        "location",
-        "voice",
+        "digitando",
+        "contato",
+        "jogos",
+        "localização",
+        "voz",
         "round",
         "video",
-        "photo",
-        "document",
+        "foto",
+        "documento",
     ]
     input_str = event.pattern_match.group(1)
     args = input_str.split()

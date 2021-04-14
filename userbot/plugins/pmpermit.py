@@ -248,7 +248,7 @@ if Config.PRIVATE_GROUP_ID != 0:
                         warns=warns,
                     )
                     + "\n\n"
-                    + "**Send** `/começar` ** para que meu mestre possa decidir por que você está aqui.**"
+                    + "**Send** `/start` ** para que meu mestre possa decidir por que você está aqui.**"
                 )
             else:
 
@@ -256,7 +256,7 @@ if Config.PRIVATE_GROUP_ID != 0:
                     f"`Hi `{mention}`, I haven't approved you yet to personal message me, Don't spam my inbox."
                     f"Just say the reason and wait until you get approved.\
                                     \n\nyou have {warns}/{totalwarns} warns`\
-                                    \n\n**Send** `/começar` **para que meu mestre possa decidir por que você está aqui.**"
+                                    \n\n**Send** `/start` **para que meu mestre possa decidir por que você está aqui.**"
                 )
         else:
             if Config.CUSTOM_PMPERMIT_TEXT:

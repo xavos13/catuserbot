@@ -19,7 +19,7 @@ PREV_REPLY_MESSAGE = {}
 CACHE = {}
 PMPERMIT_PIC = Config.PMPERMIT_PIC
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "cat"
-USER_BOT_WARN_ZERO = "You were spamming my peru master's inbox, henceforth you are blocked by my master's userbot. **Now GTFO, i'm playing minecraft** "
+USER_BOT_WARN_ZERO = "Você estava enviando spam para a caixa de entrada do meu mestre, Provavelmente você está bloqueado pelo userbot do meu mestre. **Agora GTFO, estou bem ocupado** "
 
 
 if Config.PRIVATE_GROUP_ID != 0:
@@ -60,7 +60,7 @@ if Config.PRIVATE_GROUP_ID != 0:
             pmpermit_sql.approve(user.id, reason)
             await edit_delete(
                 event,
-                f"`Approved to pm `[{user.first_name}](tg://user?id={user.id})",
+                f"`Aprovado para pm `[{user.first_name}](tg://user?id={user.id})",
                 5,
             )
             if user.id in PMMESSAGE_CACHE:
@@ -96,7 +96,7 @@ if Config.PRIVATE_GROUP_ID != 0:
             pmpermit_sql.disapprove(user.id)
             await edit_or_reply(
                 event,
-                f"`disapproved to pm` [{user.first_name}](tg://user?id={user.id})",
+                f"`reprovado para pm` [{user.first_name}](tg://user?id={user.id})",
             )
         else:
             await edit_or_reply(

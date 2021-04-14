@@ -137,7 +137,7 @@ async def _(event):
                         return
                     test12 = await event.client.send_message(
                         chat,
-                        "You have entered an invalid command. Please send `/start` again or do not send another message if you do not wish to be blocked and reported.",
+                        "Você digitou um comando inválido. Por favor envie `/começar`novamente ou não envie outra mensagem se não quiser ser bloqueado e denunciado.",
                     )
                     set_key(PMMESSAGE_CACHE, event.chat_id, test12.id)
                     response = await conv.get_response(chat)

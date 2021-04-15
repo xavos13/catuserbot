@@ -64,9 +64,9 @@ async def cmd_list(event):
             await event.delete()
     else:
         if HELPTYPE is True:
-            help_string = f"Userbot Helper. Provided by {ALIVE_NAME} to reveal all the plugins\
-                          \nCheck `.help plugin name` for commands, in case popup doesn't appear.\
-                          \nCheck `.info plugin name` for usage of thoose plugins and commands"
+            help_string = f"Userbot Ajuda. Fornecido por {ALIVE_NAME} para revelar todos os plugins\
+                          \nCheck `.help plugin name` para comandos, caso o pop-up não apareça.\
+                          \nCheck `.info plugin name` para o uso desses plug-ins e comandos"
             tgbotusername = Config.TG_BOT_USERNAME
             results = await event.client.inline_query(tgbotusername, help_string)
             await results[0].click(event.chat_id, reply_to=reply_to_id, hide_via=True)

@@ -116,7 +116,7 @@ if Config.PRIVATE_GROUP_ID != 0:
         if user.id in PM_START:
             PM_START.remove(user.id)
         await event.edit(
-            f"`You are blocked Now .You Can't Message Me from now..`[{user.first_name}](tg://user?id={user.id})"
+            f"`Você está bloqueado agora. Você não pode me enviar mensagens a partir de agora..`[{user.first_name}](tg://user?id={user.id})"
         )
         await event.client(functions.contacts.BlockRequest(user.id))
 
@@ -130,7 +130,7 @@ if Config.PRIVATE_GROUP_ID != 0:
                 return
         await event.client(functions.contacts.UnblockRequest(user.id))
         await event.edit(
-            f"`You are Unblocked Now .You Can Message Me From now..`[{user.first_name}](tg://user?id={user.id})"
+            f"`Você está desbloqueado agora. Você pode me enviar uma mensagem a partir de agora..`[{user.first_name}](tg://user?id={user.id})"
         )
 
     @bot.on(admin_cmd(pattern="listapproved$"))
